@@ -1,5 +1,7 @@
 import React from 'react'
 import './Welcomepage.css'
+import { Link } from 'react-router-dom';
+import Signup from '../pages/Signup';
 
 const Welcomepage = () => {
   return (
@@ -11,6 +13,15 @@ const Welcomepage = () => {
     <div>
     <h2>Wanna Find Who's Yours?</h2>
         <p>This is the content inside the box.</p>
+
+        <div>
+            <Link to='/signup'>
+              <button>
+                <span>Get Started</span>
+              </button>
+            </Link>
+              
+        </div>
         </div>
     </div>
     </div>
