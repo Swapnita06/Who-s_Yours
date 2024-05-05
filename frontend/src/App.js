@@ -10,8 +10,6 @@ import Nav from './components/Nav'
 const App = () => {
   return (
     <BrowserRouter>
-   
-     <Nav/>
    <Routes>
     <Route>
       <Route exact path='/' element={<Welcomepage/>}/>

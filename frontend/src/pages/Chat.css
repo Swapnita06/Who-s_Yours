@@ -1,0 +1,23 @@
+body {
+    background-image: url("../components/chatbg.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: rgb(3, 41, 54); /* Change 'lightblue' to your desired color */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+  }
+  .container{
+    margin-top: 65px;
+    width: 82vw;
+    height: 82vh ;
+    background-color: rgba(27, 2, 52, 0.769);
+    backdrop-filter: blur(2px) saturate(120%);
+    border-radius: 12px;
+    border: 20px solid rgba(255, 255, 255, 0.125);
+  }
+  

@@ -1,12 +1,16 @@
 import React from 'react'
 import Nav from '../components/Nav'
-
+import './Chat.css'
 
 const Chat = () => {
   return (
-    <div>
-        <h1 style={{color:'black', paddingTop: '64px' }}>hello</h1>
+    <>
+    <Nav/>
+    <div className='container'> 
+        
+
         </div>
+        </>
   )
 }
 
