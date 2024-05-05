@@ -1,5 +1,5 @@
 import React from 'react'
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import {useState} from 'react'
 import './Signup.css'
 
@@ -104,7 +104,9 @@ const Signup = () => {
           />
           {errors.password && <p>{errors.password}</p>}
         </div>
+        <Link to='/home'>
         <button className='signUp' type="submit" >Sign Up</button>
+        </Link>
       </form>
     </div>
   
