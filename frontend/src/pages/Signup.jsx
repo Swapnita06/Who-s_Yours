@@ -4,8 +4,6 @@ import {useState} from 'react'
 import './Signup.css'
 
 const Signup = () => {
-
-
   const [formData, setFormData] = useState({
     username: '',
     email: '',
@@ -52,7 +50,7 @@ const Signup = () => {
     if (validateForm()) {
       console.log('Form submitted successfully:', formData);
       setErrors({});
-      navigate('/shopping');
+      navigate('/home');
     } else {
       console.log('Form validation failed');
     }
@@ -104,9 +102,9 @@ const Signup = () => {
           />
           {errors.password && <p>{errors.password}</p>}
         </div>
-        <Link to='/home'>
+        
         <button className='signUp' type="submit" >Sign Up</button>
-        </Link>
+        
       </form>
     </div>
   

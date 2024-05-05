@@ -4,7 +4,7 @@ import Nav from '../components/Nav'
 const Home = () => {
   return (
     <div>
-      <h1>hiiii</h1>
+      <h1 style={{color:'black', paddingTop: '64px' }}>hello you</h1>
     </div>
   )
 }
