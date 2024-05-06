@@ -18,10 +18,10 @@ const Chaty = () => {
       </div>
       <div className="center"></div>
       <div className="bottom">
-        <div className='icons'>
-          <img src='./images/img.png'/>
-          <img src='./images/camera.png'/>
-          <img src='./images/mic.png'/>
+        <div className='icons' style={{display:'flex'}}>
+          <img style={{height:'30px'}}src='./images/img.png'/>
+          <img style={{height:'30px'}} src='./images/camera.png'/>
+          <img style={{height:'30px'}} src='./images/mic.png'/>
         </div>
         <input type='text' placeholder='Type a message...'/>
       <div className='emoji'>
