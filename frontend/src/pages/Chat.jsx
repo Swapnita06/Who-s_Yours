@@ -5,11 +5,13 @@ import List from '../components/list/List'
 import Chaty from '../components/chats/Chaty'
 import Detail from '../components/detail/Detail'
 import Login from '../components/login/Login'
+import Notification from '../components/notifications/Notification'
 const Chat = () => {
-  const user=false;
+  const user=true;
 
   return (
     <>
+    <Nav/>
     <div className='container'> 
     {
       user?(
@@ -18,8 +20,9 @@ const Chat = () => {
         <Chaty/>
         <Detail/>
         </>
-      ): (<Login/>)
-    }
+      ): (<Login/>
+    )}
+    <Notification/>
         </div>
         </>
   )
