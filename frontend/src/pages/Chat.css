@@ -13,8 +13,8 @@ body {
   }
   .container{
     margin-top: 65px;
-    width: 90vw;
-    height: 90vh ;
+    width: 80vw;
+    height: 85vh ;
     background-color: rgba(27, 2, 52, 0.769);
     backdrop-filter: blur(2px) saturate(120%);
     border-radius: 12px;
