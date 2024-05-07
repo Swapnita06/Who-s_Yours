@@ -37,7 +37,7 @@ const[loading,setLoading] = useState(false)
       const imgUrl =await upload(avatar.file)
      
      
-     await setDoc(doc(db, "users", "res.user.uid"), {
+     await setDoc(doc(db, "users", res.user.uid), {
       username,
       email,
       avatar: imgUrl,
@@ -46,7 +46,7 @@ const[loading,setLoading] = useState(false)
 
     });
 
-    await setDoc(doc(db, "userchats", "res.user.uid"), {
+    await setDoc(doc(db, "userchats", res.user.uid), {
       chats:[],
     });
       
@@ -99,7 +99,7 @@ const[loading,setLoading] = useState(false)
       <h2>Create an Account</h2>
         <form onSubmit={handleRegister}>
             <label htmlFor='file'>
-                <img src={avatar.url||"./images/avatar.png"} alt="" />                Upload an Image
+                <img src={avatar.url||"./images/avatar.png"} alt="" /> Upload an Image
             </label>
             <input type='file' id='file' style={{display:'none'}} onChange={handleAvatar} />
             <input type='text' placeholder='Username' name='username'/>
