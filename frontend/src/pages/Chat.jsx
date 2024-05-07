@@ -41,7 +41,8 @@ const Chat = () => {
         <Chaty/>
         <Detail/>
         </>
-      ): (<Login/>
+      ): (
+      <Login/>
     )}
     <Notification/>
         </div>
