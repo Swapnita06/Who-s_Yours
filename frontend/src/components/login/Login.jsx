@@ -1,6 +1,6 @@
 import './login.css'
 import { toast } from 'react-toastify'
-import {createUserWithEmailAndPassword} from 'firebase/auth';
+import {createUserWithEmailAndPassword, signInWithEmailAndPassword} from 'firebase/auth';
 import React, { useState } from 'react' 
 import { auth,db } from '../../lib/firebase'
 import {doc, setDoc} from 'firebase/firestore';
@@ -62,10 +62,27 @@ const[loading,setLoading] = useState(false)
     
  };
 
- const handleLogin=e=>{
+ const handleLogin=async (e)=>{
   e.preventDefault()
-  
-}
+   setLoading(true);
+
+   const formData =new FormData(e.target);
+   const {email,password} =Object.fromEntries(formData);
+   
+
+  try{
+    
+    await signInWithEmailAndPassword(auth,email,password);
+  }catch(err){
+    console.log(err)
+    toast.error(err.message)
+  }
+
+  finally{
+    toast.success("Logged in Successfully!")
+    setLoading(false);
+  }
+};
 
   return (
     <div className='login'>
