@@ -7,7 +7,7 @@ import Detail from '../components/detail/Detail'
 import Login from '../components/login/Login'
 import Notification from '../components/notifications/Notification'
 const Chat = () => {
-  const user=true;
+  const user=false;
 
   return (
     <>
